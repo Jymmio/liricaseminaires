@@ -1,0 +1,15 @@
+<div id="head-item">
+  <button id="slide" (click) = "slideClick()"><i class="fas fa-bars"></i></button>
+  <app-sidebar></app-sidebar>
+  <h1 routerLink="home">SÉMINAIRES LIRICA</h1>
+  <div id="search">
+    <form [formGroup]="form">
+      <div id="search-bar">
+          <input placeholder="Search title..."  formControlName="search"/>
+          <button id="search-button" (click)="submitSearch()"><i class="fas fa-search"></i></button>
+      </div>
+    </form>
+    <button id="advanced-search" (click) = "searchClick()">Recherche avancée</button>
+  </div>
+</div>
+<app-advanced-search id="advanced-search-section"></app-advanced-search>

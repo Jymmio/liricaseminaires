@@ -1,0 +1,44 @@
+.seminar-cards{
+  margin: 40px;
+}
+#seminar-year{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 100px;
+  form{
+    font-size: 2em;
+    padding: 10px;
+    height: 50%;
+    width: auto;
+    #choix{
+      background-color: rgba(240,240,240,0.6);
+      border: none;
+      -webkit-appearance: none; /* Pour les navigateurs WebKit comme Chrome et Safari */
+      appearance: none;
+      padding: 10px;
+      font-size: 1.1em;
+    }
+    option{
+      font-size: 0.8em;
+      padding: 25px;
+    }
+  }
+}
+h1{
+  color: white;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 3.2em;
+  font-weight: bold;
+  padding: 30px;
+  background-color: rgb(25, 100, 200);
+  display: inline-block;
+}
+.cards{
+  margin: 25px;
+  display: flex;
+  flex-wrap: wrap;
+}
+app-card{
+  width: 33%;
+}

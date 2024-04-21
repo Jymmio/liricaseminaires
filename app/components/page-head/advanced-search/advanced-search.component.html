@@ -1,0 +1,43 @@
+<div id="advanced-search-bar" *ngIf="isSearchbarVisible">
+  <form [formGroup]="form">
+    <div id="up-part" class="search-part">
+      <div class="search-element">
+        <h3>Titre</h3>
+        <input placeholder="Titre..." formControlName="title" />
+      </div>
+      <div class="search-element">
+        <h3>Orateur</h3>
+        <input placeholder="Orateur..." formControlName="orator" />
+      </div>
+      <div class="search-element">
+        <h3 style="text-align: center; padding-bottom: 8px;">Langue</h3>
+        <label for="choix">Langue...
+          <select class='choix' formControlName="language">
+            <option>-</option>
+            <option>Français</option>
+            <option>English</option>
+          </select>
+        </label>
+      </div>
+    </div>
+    <div id="down-part" class="search-part">
+      <div class="search-element">
+        <h3>Emplacement</h3>
+        <label for="choix">Place...
+          <select class='choix' formControlName="place">
+            <option>-</option>
+            <option>St Charles</option>
+            <option>Luminy</option>
+            <option>A distance</option>
+            <option>Autre</option>
+          </select>
+        </label>
+      </div>
+      <div class="search-element">
+        <h3>Date de création</h3>
+        <input type="date" formControlName="date">
+      </div>
+      <button type="submit" (click)="submitSearch()">Chercher !</button>
+    </div>
+  </form>
+</div>
